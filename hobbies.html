@@ -19,6 +19,40 @@
                 border: none;
                 height: 1px;
             }
+
+            img{
+                border: none;
+                margin: 20px;
+            }
+
+            iframe{
+                border: none;
+                margin: 20px;
+            }
+
+            button{
+                background-color: rgb(13, 8, 52);
+                color: rgb(255, 254, 227);
+                font-family: monospace;
+                border: solid, 1px;
+                border-color: rgb(255, 254, 227);
+                padding: 5px;
+            }
+
+            .hobby{
+                text-align: center;
+                width: 50%;
+                margin: 50px;
+                padding: 10px;
+                border: solid;
+                border-width: 1px;
+                border-color: rgb(255, 254, 227);
+            }
+
+            .parent{
+                display: flex;
+                justify-content: space-around;
+            }
         </style>
 
     </head>
@@ -27,6 +61,35 @@
         <h1 style = text-align:center;>My Hobbies</h1>
         <hr>
 
+        <div class = parent>
+            <div class = hobby>
+                <h2><i>Music</i></h2>
+                <p>Every once in a while I open up Jummbox and make some simple tunes.  I almost never finish a full song, but I have piles upon piles of little musical doodles.</p>
+            </div>
+
+            <div class = hobby>
+                <h2><i>Pixel Art</i></h2>
+                <p>Be it for a project or just leisurely activity, I greatly enjoy making pixel art. There are just so many ways to tackle conveying shapes in a small image/animation.</p>
+            </div>
+        </div>
+
+        <div class = parent>
+            <div class = hobby>
+                <h2><i>Programming</i></h2>
+                <p>Most of the programming I do is in school, but even when I make programs for school, I always go above and beyond.  It's just so fun finding solutions to difficult problems using pure logic.</p>
+                <div class = parent>
+                    <img src="python.png" alt="Python Logo" style="width:30%;">
+                    <img src="gamemaker.png" alt="Python Logo" style="width:30%;">
+                </div>
+                <a href="programs.html"><button style="margin:10px;height:40px;">Some of My Programs</button></a>
+            </div>
+
+            <div class = hobby>
+                <h2><i>Playing Puzzle Games</i></h2>
+                <p>Another activity that perfectly scratches that itch of wanting to use pure logic to solve problems.  My favorite puzzle game of all time is Snakebird, and it is ridiculously hard, but every puzzle is masterfully designed and feels incredible to figure out.</p>
+                <img src="snakebird.png" alt="Snakebird Screenshot" style="width:70%;">
+            </div>
+        </div>
     </body>
 
 </html>
