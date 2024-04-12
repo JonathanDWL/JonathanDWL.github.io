@@ -2,3 +2,8 @@ body {
     font-family: monospace;
     word-wrap: break-word;
 }
+
+.navbar{
+    display: block;
+    text-align: center;
+}
