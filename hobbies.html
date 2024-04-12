@@ -39,6 +39,11 @@
                 padding: 5px;
             }
 
+            audio{
+                margin: 5px;
+                width: 50%;
+            }
+
             .hobby{
                 text-align: center;
                 width: 50%;
@@ -53,6 +58,10 @@
                 display: flex;
                 justify-content: space-around;
             }
+
+            #audiobox{
+                margin: 5%;
+            }
         </style>
 
     </head>
@@ -65,11 +74,68 @@
             <div class = hobby>
                 <h2><i>Music</i></h2>
                 <p>Every once in a while I open up Jummbox and make some simple tunes.  I almost never finish a full song, but I have piles upon piles of little musical doodles.</p>
+                <div id = audiobox>
+                    <div class = parent>
+                        <audio controls>
+                            <source src="track1.wav" type="audio/wav">
+                            Your browser does not support playing audio.
+                        </audio>
+                        <audio controls>
+                            <source src="track2.wav" type="audio/wav">
+                            Your browser does not support playing audio.
+                        </audio>
+                        <audio controls>
+                            <source src="track3.wav" type="audio/wav">
+                            Your browser does not support playing audio.
+                        </audio>
+                    </div>
+                    <div class = parent>
+                    <audio controls>
+                        <source src="track4.wav" type="audio/wav">
+                        Your browser does not support playing audio.
+                    </audio>
+                    <audio controls>
+                        <source src="track5.wav" type="audio/wav">
+                        Your browser does not support playing audio.
+                    </audio>
+                    <audio controls>
+                        <source src="track6.wav" type="audio/wav">
+                        Your browser does not support playing audio.
+                    </audio>
+                    </div>
+                    <div class = parent>
+                    <audio controls>
+                        <source src="track7.wav" type="audio/wav">
+                        Your browser does not support playing audio.
+                    </audio>
+                    <audio controls>
+                        <source src="track8.wav" type="audio/wav">
+                        Your browser does not support playing audio.
+                    </audio>
+                    <audio controls>
+                        <source src="track9.wav" type="audio/wav">
+                        Your browser does not support playing audio.
+                    </audio>
+                    </div>
+                </div>
             </div>
 
             <div class = hobby>
                 <h2><i>Pixel Art</i></h2>
-                <p>Be it for a project or just leisurely activity, I greatly enjoy making pixel art. There are just so many ways to tackle conveying shapes in a small image/animation.</p>
+                <p>Be it for a project or just leisurely activity, I greatly enjoy drawing and animating pixel art. There are just so many ways to tackle conveying shapes in a small image/animation.</p>
+                <div class = parent>
+                    <img src="book.gif" alt="Book Gif" width="5%">
+                    <img src="theboard.gif" alt="Board Gif" width="10%" height="10%">
+                </div>
+                <div class = parent>
+                    <img src="jarfill.gif" alt="Jar 1 Gif" width="5%">
+                    <img src="jarfill2.gif" alt="Jar 2 Gif" width="5%">
+                    <img src="jarfill3.gif" alt="Jar 3 Gif" width="5%">
+                </div>
+                <div class = parent>
+                    <img src="jarfill4.gif" alt="Jar 4 Gif" width="5%">
+                    <img src="jarfill5.gif" alt="Jar 5 Gif" width="5%">
+                </div>
             </div>
         </div>
 
