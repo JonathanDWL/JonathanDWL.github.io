@@ -29,13 +29,40 @@
                 padding: 5px;
             }
 
-            #gallery{
-                text-align: center;
-                margin: 50px;
-                padding: 10px;
+            #gallerywrapper{
+                width: 640px;
+                height: 450px;
+                margin: 50px auto;
+                position: relative;
                 border: solid;
                 border-width: 1px;
                 border-color: rgb(245, 255, 230);
+            } 
+
+            #gallery{
+                position: absolute;
+                height: 450px;
+                width: 640px;
+                overflow: hidden;
+                text-align: center;
+            } 
+
+            #gallery div{
+                padding-top: 20px;
+                width: 640px; 
+                height: 900px; 
+                position: relative;
+            } 
+
+            img{
+                display:block; 
+                margin:50px auto; 
+            }
+
+            #gallery div button{
+                margin-right: 20px;
+                margin-left: 20px;
+                width: 100px;
             }
         </style>
 
@@ -55,8 +82,24 @@
         <h1 style = text-align:center;>Photo Gallery</h1>
         <hr>
 
-        <div id = gallery>
-
+        <div id = gallerywrapper>
+            <div id = gallery>
+                <div id = image1>
+                    <a href="#image3"><button>Prev</button></a>
+                    <a href="#image2"><button>Next</button></a>
+                    <img src="snakebird.png" alt="Image 1">
+                </div>
+                <div id = image2>
+                    <a href="#image1"><button>Prev</button></a>
+                    <a href="#image3"><button>Next</button></a>
+                    <img src="python.png" alt="Image 2" style="width:30%">
+                </div>
+                <div id = image3>
+                    <a href="#image2"><button>Prev</button></a>
+                    <a href="#image1"><button>Next</button></a>
+                    <img src="gamemaker.png" alt="Image 3">
+                </div>
+            </div>
         </div>
 
     </body>
